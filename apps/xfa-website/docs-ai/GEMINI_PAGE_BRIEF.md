@@ -1,9 +1,24 @@
 # GEMINI_PAGE_BRIEF
 
 - page_route: /
-- page_goal: introduce product positioning and drive contact intent
-- sections: hero, capabilities, proof points, CTA footer
-- copy_constraints: short factual lines, no hype wording
-- seo_requirements: title, description, canonical, OG tags
-- responsive_requirements: mobile-first layout and readable spacing
-- acceptance_criteria: all sections render, nav works, CTA visible above fold on desktop
+- page_goal: Showcasing Beijing New Solution Technology Co., Ltd. (北京新方案科技有限公司) digital transformation capabilities and solutions.
+- sections:
+    - Navbar: Logo, Home, Product Capabilities, Industry Solutions, About Us, Contact Us.
+    - Hero: "数字中国新方案" (New Solutions for Digital China), Mission Statement.
+    - Product Capabilities: AIOT智能物联网平台, 数据治理平台, 业务协同平台, 哲思交付平台.
+    - Industry Solutions: Digital HR, Digital Marketing, Digital Assets, Digital Contracts, Digital Legal, Digital Procurement (with sub-features).
+    - About Us: Brief company mission and values.
+    - Contact Us: HQ info, email, etc.
+- copy_constraints: Precise, modern, engineering-forward Chinese text with English subtitles where appropriate.
+- seo_requirements:
+    - Title: 北京新方案科技有限公司 | 数字中国新方案
+    - Description: 北京新方案科技有限公司致力于为企业数字化转型提供创新解决方案，通过高效的实施服务助力客户实现业务升级。
+- responsive_requirements:
+    - Mobile-first approach.
+    - Hamburger menu for mobile navigation.
+    - Grid/Flexbox layouts that stack on mobile.
+- acceptance_criteria:
+    - All sections from xfa.cn are present.
+    - Navigation works correctly.
+    - Responsive design works on mobile devices.
+    - Professional "engineering-forward" aesthetic.

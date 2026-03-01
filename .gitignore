@@ -8,3 +8,7 @@ playwright-report
 .env
 .env.*
 !.env.example
+
+# MCP configs containing secrets
+.cursor/mcp.json
+.vscode/cline_mcp_settings.json
