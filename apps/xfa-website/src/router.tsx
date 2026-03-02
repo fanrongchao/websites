@@ -1,5 +1,5 @@
 import { createRootRoute, createRoute, createRouter } from '@tanstack/react-router';
-import { Outlet, Link } from '@tanstack/react-router';
+import { Outlet } from '@tanstack/react-router';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Capabilities } from './components/Capabilities';
