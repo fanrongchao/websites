@@ -1,24 +1,26 @@
 # GEMINI_PAGE_BRIEF
 
 - page_route: /
-- page_goal: Showcasing Beijing New Solution Technology Co., Ltd. (北京新方案科技有限公司) digital transformation capabilities and solutions.
+- page_goal: 以 together.ai 当前官网的浅色高质感科技风为参考，并使用明确的 bento box 模块化布局，展示北京新方案科技有限公司的数字化平台能力、行业方案与持续交付方法。
 - sections:
-    - Navbar: Logo, Home, Product Capabilities, Industry Solutions, About Us, Contact Us.
-    - Hero: "数字中国新方案" (New Solutions for Digital China), Mission Statement.
-    - Product Capabilities: AIOT智能物联网平台, 数据治理平台, 业务协同平台, 哲思交付平台.
-    - Industry Solutions: Digital HR, Digital Marketing, Digital Assets, Digital Contracts, Digital Legal, Digital Procurement (with sub-features).
-    - About Us: Brief company mission and values.
-    - Contact Us: HQ info, email, etc.
-- copy_constraints: Precise, modern, engineering-forward Chinese text with English subtitles where appropriate.
+    - Navbar: 浅色半透明悬浮导航，包含首页、产品能力、行业方案、公司介绍、联系我们及项目咨询 CTA。
+    - Hero: "数字中国新方案" 超大标题、英文 eyebrow、平台价值说明、双 CTA，整体放入 bento 主卡，并配合右侧视觉卡与两个辅助信息卡。
+    - Product Capabilities: 以 together.ai 风格的大圆角 bento 卡片矩阵呈现 AIOT 智能物联网平台、数据治理平台、业务协同平台、哲思交付平台。
+    - Industry Solutions: 以多尺寸 bento 方案卡呈现数字人力、数字营销、数字资产、数字合同/法务、数字采购，并展示重点标签。
+    - Delivery System: 用 bento 组合展示平台先行、场景闭环、持续交付三大方法论及 roadmap 补充说明。
+    - Final CTA: 强收口 CTA，引导进入联系页，保持大卡片式收口。
+- copy_constraints: 精确、现代、工程导向；中文为主，英文仅作辅助标签；不添加未经证实的客户、认证、合规或夸张业绩宣称。
 - seo_requirements:
     - Title: 北京新方案科技有限公司 | 数字中国新方案
-    - Description: 北京新方案科技有限公司致力于为企业数字化转型提供创新解决方案，通过高效的实施服务助力客户实现业务升级。
+    - Description: 北京新方案科技有限公司提供面向企业数字化转型的平台能力、行业解决方案与持续交付服务，帮助组织构建可长期演进的数字化底座。
 - responsive_requirements:
     - Mobile-first approach.
-    - Hamburger menu for mobile navigation.
-    - Grid/Flexbox layouts that stack on mobile.
+    - Floating navbar collapses into expandable mobile menu.
+    - Hero, card grid, solutions list, delivery section, and contact form stack cleanly on small screens.
 - acceptance_criteria:
-    - All sections from xfa.cn are present.
-    - Navigation works correctly.
+    - 首页核心信息结构仍覆盖 xfa.cn 的产品能力、行业方案、公司方法与联系导向。
+    - 视觉语言尽量贴近 together.ai 当前官网的浅色科技感、版式节奏和卡片气质。
+    - 首页首屏和核心内容区明确呈现 bento box 布局，而不是普通纵向卡片堆叠。
+    - Navigation, anchors, and CTA routes work correctly.
     - Responsive design works on mobile devices.
     - Professional "engineering-forward" aesthetic.

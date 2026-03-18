@@ -1,41 +1,39 @@
 import React from 'react';
-
-const SOLUTIONS = [
-  { 
-    title: "数字人力 (Digital HR)", 
-    description: "覆盖组织、人事、招聘、考勤、培训、薪酬绩效及用工管理。" 
-  },
-  { 
-    title: "数字营销 (Digital Marketing)", 
-    description: "全链路营销、客户、合同、经销商及售后服务管理。" 
-  },
-  { 
-    title: "数字资产 (Digital Assets)", 
-    description: "从采购到报表的资产全生命周期运维管理。" 
-  },
-  { 
-    title: "数字合同/法务 (Digital Contracts/Legal)", 
-    description: "纠纷、案件、知识产权管理及 AI 法律助手。" 
-  },
-  { 
-    title: "数字采购 (Digital Procurement)", 
-    description: "物料、仓库、招标、订单及供应商全体系管控。" 
-  }
-];
+import { slideContent } from '../content/slideContent.generated';
 
 export function Solutions() {
+  const solutions = slideContent.solutions as {
+    kicker: string;
+    heading: string;
+    description?: string;
+    items: readonly { title: string; description: string; focus?: readonly string[] }[];
+  };
+  const description =
+    solutions.description ?? '用更接近业务语言的方式展示产品组合，让决策者快速理解落地边界。';
+
   return (
     <section id="solutions" className="section">
       <div className="section-header">
-        <p className="section-kicker">Industry Solutions</p>
-        <h2 className="section-title">数字企业行业解决方案</h2>
+        <p className="section-kicker">{solutions.kicker}</p>
+        <h2 className="section-title">{solutions.heading}</h2>
+        <p className="section-description">{description}</p>
       </div>
-      <div className="solutions-list">
-        {SOLUTIONS.map((sol, idx) => (
-          <div key={idx} className="solution-row">
-            <h3 className="solution-title">{sol.title}</h3>
-            <p className="solution-desc">{sol.description}</p>
-          </div>
+      <div className="solutions-grid">
+        {solutions.items.map((solution, index) => (
+          <article key={solution.title} className="solution-card">
+            <div className="solution-card-top">
+              <p className="solution-index">{String(index + 1).padStart(2, '0')}</p>
+              <h3 className="solution-title">{solution.title}</h3>
+            </div>
+            <div className="solution-detail">
+              <p className="solution-desc">{solution.description}</p>
+              <div className="solution-tags">
+                {(solution.focus ?? ['业务闭环', '场景落地']).map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+            </div>
+          </article>
         ))}
       </div>
     </section>
